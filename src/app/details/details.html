@@ -1,1 +1,17 @@
-<p>details works! {{ postShortId }}</p>
+<section class="details-wrapper">
+  <section class="details">
+    <section class="details-heading">
+      <img
+        [src]="postShort?.photo"
+        alt="Picture of {{ postShort?.title }} by {{ postShort?.author }}"
+        class="details-photo"
+        crossorigin
+      >
+      <h2>{{ postShort?.title }}</h2>
+    </section>
+    <section class="details-post">
+      <p>{{ postShort?.description }}</p>
+      <p>Author: {{ postShort?.author }}</p>
+    </section>
+  </section>
+</section>
