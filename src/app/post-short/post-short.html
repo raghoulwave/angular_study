@@ -1,0 +1,11 @@
+<section class="listing">
+  <img
+    [src]="postShort().photo"
+    alt="Picture of {{ postShort().title }} by {{ postShort().author }}"
+    class="listing-photo"
+    crossorigin
+  >
+  <h2 class="listing-heading">{{ postShort().title }}</h2>
+  <p class="listing-location">{{ postShort().description }}</p>
+  <p class="listing-location">{{ postShort().author }}</p>
+</section>
