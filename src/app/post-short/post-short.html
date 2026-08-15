@@ -8,4 +8,5 @@
   <h2 class="listing-heading">{{ postShort().title }}</h2>
   <p class="listing-location">{{ postShort().description }}</p>
   <p class="listing-location">{{ postShort().author }}</p>
+  <a [routerLink]="['/details', postShort().id]">Learn More</a>
 </section>
