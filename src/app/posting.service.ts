@@ -89,4 +89,8 @@ export class PostingService {
   getPostShortById(id: number): PostShortInfo | undefined {
     return this.postShortList.find((post: PostShortInfo) => post.id === id);
   }
+
+  submitComment(username: string, email: string, content: string) {
+    console.log(`submitComment(${username}, ${email}, ${content})`);
+  }
 }

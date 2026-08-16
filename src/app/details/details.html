@@ -13,5 +13,19 @@
       <p>{{ postShort?.description }}</p>
       <p>Author: {{ postShort?.author }}</p>
     </section>
+    <section class="details-comment">
+      <h2 class="section-heading">Comment now</h2>
+      <form [formGroup]="commentForm" (submit)="submitComment()">
+        <label for="first-name">Name</label>
+        <input id="first-name" type="text" formControlName="username" />
+
+        <label for="last-name">Email</label>
+        <input id="last-name" type="text" formControlName="email" />
+
+        <label for="email">Comment</label>
+        <input id="email" type="email" formControlName="content" />
+        <button type="submit" class="primary">Apply now</button>
+      </form>
+    </section>
   </section>
 </section>
